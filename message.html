@@ -8,16 +8,28 @@
         <title>Interactive rating component</title>
     </head>
     <body>
-        <div class="welcome_container">
-            <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
-            <p>You selected <span id="num"></span> out of 5</p>
-            <header>
-                <h1>Thank you!</h1>
-            </header>
+        <div class="welcome-container">
+            <div class="welcome-container-1">
+                <img class = "welcome" src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+                <p class="score">You selected <span id="num"></span> out of 5</p>
+                <header>
+                    <h1>Thank you!</h1>
+                </header>
+                <main>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+                </main>
+                <button class = "message-button"onclick="again()">RATE AGAIN</button>
+            </div>
+            <footer>
+                <div class="attribution">
+                    Coded by <a href="https://github.com/noneofurbuzz">Ugochi Ike</a>.
+                  </div>
+            </footer>
         </div>
         <script>
             var myvalue = localStorage.getItem("Value");
             document.getElementById("num").textContent = myvalue;
         </script>
+        <script src="script.js"></script>
     </body>
 </html>

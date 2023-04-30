@@ -12,7 +12,8 @@ body{
     width: 350px;
 }
 .container-1{
-    margin: auto;
+    margin: 0 auto;
+    height: auto;
     background-color: hsl(213, 19%, 18%);
     border-radius: 30px;
     max-width: 80%;
@@ -34,7 +35,7 @@ li{
     vertical-align: middle;
 
 }
-img{
+.icon-star{
     border-radius: 50%;
     width: 18px;
     height: 18px;
@@ -63,4 +64,124 @@ input{
     font-family: overpass;
     color: hsl(217, 12%, 63%);
     margin: 5px;
+}
+.welcome-container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+}
+.welcome-container-1{
+    margin: 0 auto;
+    height: auto;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    max-width: 80%;
+    padding: 20px 20px;
+    
+}
+.welcome{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+.welcome-container-1 .score{
+    border-radius: 40px;
+    text-align: center;
+    background-color: hsla(213, 19%, 21%,0.9);
+    padding: 10px 0;
+    margin:  20px 30px;
+    color: hsl(25, 97%, 53%);
+}
+.welcome-container-1 header h1{
+    text-align: center;
+}
+.welcome-container-1 main p{
+    text-align: center;
+}
+button{
+    font-family: overpass;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    text-align: center; 
+    vertical-align: middle;
+    border-radius: 30px;
+    padding: 10px 115px;
+    font-weight: 700;
+}
+button:active{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+input:focus{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+input:active{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+.attribution{
+    margin: auto;
+    padding-top: 50px;
+    font-size: 14px;
+    
+}
+.attribution a{
+    color: hsl(213, 19%, 18%);
+}
+.message-button{
+    font-family: overpass;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    text-align: center; 
+    vertical-align: middle;
+    border-radius: 30px;
+    padding: 10px 102px;
+    font-weight: 700;
+    white-space: nowrap;
+    }
+
+@media (pointer:fine){
+    button:hover{
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+    button:active{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(25, 97%, 53%);
+    }
+    input:hover{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(25, 97%, 53%);
+        cursor: pointer;
+    }
+    input:focus{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(217, 12%, 63%);
+    }
+    input:active{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(25, 97%, 53%);
+    }
+}
+@media screen and (min-width : 500px){
+    .container{
+        width: 450px;
+    }
+    button{
+        padding: 10px 155px;
+    }
+    .welcome-container{
+        width: 500px;
+    }
+    .message-button{
+        padding: 10px 161.5px;
+    }
 }

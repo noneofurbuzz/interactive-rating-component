@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Interactive rating component</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-1">
+                <img src="images/icon-star.svg" alt="icon-star">
+                <header>
+                    <h1>How did we do?</h1>
+                </header>
+                <main>
+                    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                    <ul>
+                        <li>
+                            <input type="button" id="1" name="rating" value="1" onclick="number(this.value)">
+                        </li>
+                        <li>
+                            <input type="button" id="2" name="rating" value="2" onclick="number(this.value)">
+                        </li>
+                        <li>
+                            <input type="button" id="3" name="rating" value="3" onclick="number(this.value)">
+                        </li>
+                        <li>
+                            <input type="button" id="4" name="rating" value="4" onclick="number(this.value)">
+                        </li>
+                        <li>
+                            <input type="button" id="5" name="rating" value="5" onclick="number(this.value)">
+                        </li>
+                    </ul>
+                    <button onclick="message()">SUBMIT</button>
+                </main>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

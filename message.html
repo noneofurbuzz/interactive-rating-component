@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Interactive rating component</title>
+    </head>
+    <body>
+        <div class="welcome_container">
+            <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+            <p>You selected <span id="num"></span> out of 5</p>
+            <header>
+                <h1>Thank you!</h1>
+            </header>
+        </div>
+        <script>
+            var myvalue = localStorage.getItem("Value");
+            document.getElementById("num").textContent = myvalue;
+        </script>
+    </body>
+</html>

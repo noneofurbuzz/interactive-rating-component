@@ -117,10 +117,6 @@ button:active{
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
 }
-input:focus{
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(217, 12%, 63%);
-}
 input:active{
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
@@ -161,10 +157,6 @@ input:active{
         color: hsl(0, 0%, 100%);
         background-color: hsl(25, 97%, 53%);
         cursor: pointer;
-    }
-    input:focus{
-        color: hsl(0, 0%, 100%);
-        background-color: hsl(217, 12%, 63%);
     }
     input:active{
         color: hsl(0, 0%, 100%);
